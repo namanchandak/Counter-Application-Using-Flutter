@@ -70,7 +70,7 @@ class _LandingPageState extends State<LandingPage> {
       _counter1--;
     });
   }
-
+//////////////////////////////////////////////////////////
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -152,7 +152,7 @@ class _LandingPageState extends State<LandingPage> {
 
               SizedBox(
 
-                height: 400 ,
+                height: 200 ,
                 child:Card(
 
                     elevation :20,
@@ -198,13 +198,63 @@ class _LandingPageState extends State<LandingPage> {
 
 
 
-
-
-
             ],
           ),
+
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+
+              SizedBox(
+                height: 200,
+                child: Column(
+                  children : [
+
+                    Column(
+                      children : [
+                        Icon(Icons.person),
+
+                      ]
+
+
+                    ),
+                    Column(
+                      children: [
+                        Text(
+                          "Flutter ",
+                          style: TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.red),
+                        ),
+                      ],
+                    ),
+
+
+
+
+                    Text(
+                      "app  developer",
+                      style: TextStyle(
+                          fontSize: 10,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.red),
+                    ),
+                  ]
+
+
+                ),
+              )
+            ],
+
+          )
         ],
-      )),
+      ),
+
+
+      ),
+
+
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: const Icon(Icons.add),
