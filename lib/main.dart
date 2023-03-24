@@ -112,7 +112,7 @@ class _LandingPageState extends State<LandingPage> {
 ////ElevatedButton.styleFrom(shape: const CircleBorder()),
 
           Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Column(
                 children: [
@@ -149,74 +149,53 @@ class _LandingPageState extends State<LandingPage> {
 
                 ],
               ),
-////Container(color: Colors.blue ,child:Column(
-//                 children: [
-//                   const Text(
-//                     "Team B",
-//                     style: TextStyle(
-//                         fontSize: 30,
-//                         fontWeight: FontWeight.bold,
-//                         color: Colors.red),
-//                   ),
-//                   Text(
-//                     "$_counter1",
-//                     style: TextStyle(fontSize: 30, color: Colors.blue),
-//                   ),
-//
-//                   Row (
-//
-//                     children: [
-//                       ElevatedButton(
-//                         onPressed: increment1,
-//                         child: const Icon(Icons.add),
-//                       ),
-//
-//
-//                       const SizedBox(width: 20,),
-//                       ElevatedButton(
-//                         onPressed: decrement1,
-//                         child: const Icon(Icons.remove),
-//                       )
-//                     ],
-//                   ),
-//
-//                 ],
-//               ) ),
+
+              SizedBox(
+
+                height: 400 ,
+                child:Card(
+
+                    elevation :20,
+                    color: Colors.purple,
+                    child: Column(
+                      children: [
+                        const Text(
+                          "Team B",
+                          style: TextStyle(
+                              fontSize: 30,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.red),
+                        ),
+                        Text(
+                          "$_counter1",
+                          style: TextStyle(fontSize: 30, color: Colors.blue),
+                        ),
+
+                        Row (
+
+                          children: [
+                            ElevatedButton(
+                              onPressed: increment1,
+                              child: const Icon(Icons.add),
+                            ),
 
 
-              Expanded( flex:10,child :Container(color: Colors.blue ,child:Column(
-                children: [
-                  const Text(
-                    "Team B",
-                    style: TextStyle(
-                        fontSize: 30,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.red),
-                  ),
-                  Text(
-                    "$_counter1",
-                    style: TextStyle(fontSize: 30, color: Colors.blue),
-                  ),
+                            const SizedBox(width: 20,),
+                            ElevatedButton(
+                              onPressed: decrement1,
+                              child: const Icon(Icons.remove),
+                            )
+                          ],
+                        ),
 
-                  Row (
-
-                    children: [
-                      ElevatedButton(
-                        onPressed: increment1,
-                        child: const Icon(Icons.add),
-                      ),
+                      ],
+                    )
+                ),
+              )
 
 
-                      const SizedBox(width: 20,),
-                      ElevatedButton(
-                        onPressed: decrement1,
-                        child: const Icon(Icons.remove),
-                      )
-                    ],
-                  ),
 
-                ],
-              ) ),)
+
 
 
 
